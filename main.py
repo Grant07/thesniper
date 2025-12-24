@@ -355,9 +355,9 @@ def main():
     # Data source
     data_source = st.sidebar.radio(
         "Data Source",
-        ["🔴 Live (Betpawa)", "📁 Mock Data"],
+        ["🔴 Live Data", "📁 Mock Data"],
         index=0,
-        help="Live data from betpawa.co.tz or mock data for testing"
+        help="Live odds data or mock data for testing"
     )
     use_live = "Live" in data_source
 
@@ -404,7 +404,7 @@ def main():
     st.divider()
 
     if use_live:
-        st.success("📡 **Live Data** from Betpawa Tanzania")
+        st.success("📡 **Live Data** - Real-time odds")
 
         try:
             client = BetpawaClient()
