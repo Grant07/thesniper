@@ -1,0 +1,11 @@
+[project]
+name = "thesniper"
+version = "0.1.0"
+description = "A disciplined betting strategy using Poisson distribution. Only suggests bets with 65%+ (1X2) or 70%+ (Over/Under) confidence."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gio>=0.2.0",
+    "scipy>=1.16.3",
+    "streamlit>=1.52.2",
+]
